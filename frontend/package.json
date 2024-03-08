@@ -37,6 +37,6 @@
   },
   "options": {
     "allowedHosts": ["localhost", ".localhost"],
-    "proxy": "https://localhost:8000/"
+    "proxy": "https://localhost:10000/"
   }
 }

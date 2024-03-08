@@ -4,7 +4,7 @@ const cors = require('cors'); // 导入 CORS 包
 const path = require('path');
 
 const app = express();
-const port = 8000;
+const port = 10000;
 
 app.use(cors()); // 启用 CORS
 app.use(express.json());

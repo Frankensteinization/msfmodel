@@ -5,9 +5,22 @@ const path = require('path');
 
 const app = express();
 const port = 10000;
+// const helmet = require('helmet');
+
 
 app.use(cors()); // 启用 CORS
 app.use(express.json());
+
+// app.use(helmet.contentSecurityPolicy({
+//     directives: {
+//         defaultSrc: ["'self'"],
+//         scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"],
+//         styleSrc: ["'self'", "'unsafe-inline'"],
+//         imgSrc: ["'self'", "data:"],
+//         // 其他必要的资源类型和源
+//     },
+// }));
+
 
 // 定义一个路由来运行 Python 脚本并返回结果
 app.post('/run-python', (req, res) => {

@@ -9,7 +9,7 @@ function MapComponent() {
       }}
     >
       <iframe
-        src='http://localhost:10000/map.html'
+        src='https://msfmodel.onrender.com/map.html'
         style={{ width: "600px", height: "400px", border: "none" }}
         title='Map'
       ></iframe>

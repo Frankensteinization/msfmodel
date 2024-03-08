@@ -13,7 +13,7 @@ function App() {
     setError("");
     setLoading(true);
     axios
-      .post("https://msfmodel.onrender.com/run-python")
+      .post("http://localhost:10000/run-python")
       .then((response) => {
         // 假设response.data.output是一个字符串，已经被格式化为多行文本
         const formattedResult = formatResult(response.data.output); // 格式化结果的函数

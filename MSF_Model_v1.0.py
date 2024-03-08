@@ -158,6 +158,7 @@ ax.set_yticks(range(-10, 11, 1))
 
 plt.gca().set_aspect('equal', adjustable='box')
 plt.savefig('result.png')
+# plt.savefig('./frontend/public/result.png')
 # plt.show()
 
 
@@ -278,6 +279,8 @@ folium.PolyLine(
 
 sh_map
 sh_map.save('map.html')
+# sh_map.save('./frontend/public/map.html')
+
 
 # 黑色虚线代表数据有效范围
 # 红色虚线与中点代指本公司

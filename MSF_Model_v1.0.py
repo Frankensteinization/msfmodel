@@ -12,8 +12,7 @@ from math import sqrt
 from numpy import concatenate
 from sklearn.preprocessing import LabelEncoder
 import sys
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+
 
 
 output_content = ""

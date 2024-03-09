@@ -57,8 +57,8 @@ function App() {
         {result && (
           <div className='mt-3 text-start'>
             {result}
-            <MapComponent />
-            <ImageComponent />
+            {/* <MapComponent /> */}
+            {/* <ImageComponent /> */}
           </div>
         )}
       </div>

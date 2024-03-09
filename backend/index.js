@@ -14,7 +14,7 @@ app.use(express.json());
 
 // 定义一个路由来运行 Python 脚本并返回结果
 app.post('/run-python', (req, res) => {
-  exec('python MSF_Model_v1.0.py', (error, stdout, stderr) => {
+  exec('python MSF_Model_v1.0_part.py', (error, stdout, stderr) => {
     if (error) {
       console.error(`执行 Python 文件时出错: ${error}`);
       res.status(500).send('执行 Python 文件时出错');
